@@ -1,0 +1,6 @@
+go 1.19
+
+use (
+	./01_getting-started
+	./02_package
+)

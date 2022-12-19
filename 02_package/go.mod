@@ -1,3 +1,3 @@
-module 02_package
+module b
 
 go 1.19
