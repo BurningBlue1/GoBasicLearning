@@ -3,8 +3,8 @@
 package main
 
 import (
-	winniepooh "b/icomefromalaska" //文件名和包名不同时，这样引入
-	"b/stringutil"                 //当要用的包和文件名相同时，这样引入
+	winniepooh "b/icomefromalaska" //文件名和包名不同时，这样引入，在路径前面接上包名
+	"b/stringutil"                 //当要用的包和文件名相同时，这样引入，直接写路径即可
 
 	//包路径的规则：从当前go.mod文件中的module参数开始，一直到包含了要引用的函数的go文件所在的目录下面
 	//比如这个例子：当前go.mod文件中module是“b”，则b就代表了go.mod文件所处的文件夹(02_package)，然后从这里一直写到name.go那几个文件所处的文件夹位置(stringutil)
